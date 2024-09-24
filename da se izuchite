@@ -1,0 +1,10 @@
+[System.Runtime.CompilerServices.InlineArray(10)] // error CS9259: Attribute 'System.Runtime.CompilerServices.InlineArray' cannot be applied to a record struct.
+record struct Buffer1()
+{
+    private int _element0;
+}
+
+[System.Runtime.CompilerServices.InlineArray(10)] // error CS9259: Attribute 'System.Runtime.CompilerServices.InlineArray' cannot be applied to a record struct.
+record struct Buffer2(int p1)
+{
+}
